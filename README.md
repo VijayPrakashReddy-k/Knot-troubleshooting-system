@@ -76,12 +76,12 @@ The **Knot Troubleshooting System** is designed to efficiently analyze **Applica
   - The system automates debugging of payment transactions using LLMs (OpenAI, Anthropic, Google GenAI).  
   - It processes HAR logs and system logs, detecting errors, failures, and anomalies in payment workflows.  
   - The LLM provides context-aware insights to help diagnose and resolve issues efficiently.
-<br>
+
 - **Structured Data Processing and Context Preparation**
   - **Transaction Grouping**: Aggregates transactions by `file_id`, ensuring log-to-transaction mapping.  
   - **Error Identification**: Filters logs for failed requests, categorizing them based on status codes (4xx, 5xx).  
   - **Few-Shot Learning**: Formats logs and transaction sequences as structured LLM prompts to generate accurate debugging recommendations.
-<br>
+
 - **Scalable and Extendable with Function Calling**
   - Supports interactive analysis via `chat_analyze()`, enabling follow-up questions and deeper insights.  
   - Integrates function calling, allowing the LLM to trigger email alerts (`send_email`) for critical failures.  
@@ -94,12 +94,12 @@ The **Knot Troubleshooting System** is designed to efficiently analyze **Applica
   - This script builds an interactive UI using Streamlit to analyze payment transaction flows.
   - It supports file uploads (HAR, log files) and also enables **batch processing** by automatically retrieving data from the data folder. The system efficiently analyzes transactions and delivers detailed visual insights into payment flow anomalies.
   - The interface enables chat-based troubleshooting, where users can ask questions and receive LLM-generated responses.
-<br>
+
 - **Data Processing and Error Detection**
   - HAR & Log File Handling: Reads and parses transaction data from files.
   - Failure Analysis: Detects authentication failures, API errors, and payment verification issues.
   - Pattern Matching: Uses `FailurePatternDetector` to categorize and summarize common failure types.
-<br>
+
 - **LLM-Powered Chat & Function Calling**
   - Supports natural language queries for analyzing transaction issues.
   - Utilizes LLM function calling to send email alerts (`send_email`).
