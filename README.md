@@ -13,6 +13,7 @@
       - [2.5 Notification \& Alert System](#25-notification--alert-system)
   - [3. Architecture Diagram](#3-architecture-diagram)
   - [4. Installation](#4-installation)
+  - [5. Improvements](#5-improvements)
 
 ## 1. Description
 
@@ -187,3 +188,9 @@ SENDER_EMAIL=your_sender_email@example.com
 ```bash
 streamlit run app/web/streamlit_app.py
 ```
+
+## 5. Improvements
+
+- Integrating database and creating indexes for har and log files based on `"file_id"` for efficiency and query performance and streamlining into Troubleshooting system and Slack integration for real-time alerts, anomaly detection, and severity-based notifications.
+
+- Strengthen prompt instructions to effectively handle all possible failure conditions and capture detailed failure context to enhance troubleshooting and resolution.
