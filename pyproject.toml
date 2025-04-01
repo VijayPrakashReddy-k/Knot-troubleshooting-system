@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "troubleshootingsystem"
+version = "0.1.0"
+description = "Tool for analyzing logs and HAR files to detect patterns and optimize performance."
+authors = ["vijay <vijayprakashreddy.kovuru@gmail.com>"]
+readme = "README.md"
+package-mode = false  # Move this here if only using Poetry for dependency management
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+streamlit = ">=1.43.1,<2.0.0"
+python-dotenv = ">=1.0.1,<2.0.0"
+pandas = ">=2.2.3,<3.0.0"
+psycopg2-binary = ">=2.9.10,<3.0.0"
+openai = "^1.65.5"
+anthropic = "^0.49.0"
+google-generativeai = "^0.8.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pytest-cov = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
