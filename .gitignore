@@ -122,3 +122,4 @@ build/
 # Local development settings
 *.local
 .streamlit/secrets.toml
+.streamlit/secrets.toml
